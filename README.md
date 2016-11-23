@@ -1,5 +1,5 @@
 # PowerToAll
-An attempt at a minecraft mod for semi-realistic late-game electricity.
+A concept for a minecraft mod for semi-realistic late-game electricity and machinery.
 
 
 ## Concept:
@@ -100,3 +100,14 @@ Uses mechanical energy to pump liquids from the world or an inventory into a pip
 #### Tank:
 Stores liquids. Duh. Extract from the bottom with a pump.
 
+#### Electric Crating Table:
+Set a crafting recipe in the table. Put in the items, once all slots are filled, the item will be ejected on the bottom. Uses electricity.
+
+#### Conveyor belt:
+Items move over the top in one direction. Uses mechanical energy. Conveyor belts in the same direction adjacent along the same axis can get power from adjacent powered conveyor belts.
+
+#### Hopper belt:
+Functions identically to the conveyor belt, but if there is a non-empty inventory below the hopper belt, it will put items from the belt into the inventory.
+
+#### Sorting Unit:
+Specify which items go out of which sides. Takes items from the top like a hopper and drops them on their specified sides. Uses electricity.
