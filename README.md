@@ -4,7 +4,9 @@ An attempt at a minecraft mod for semi-realistic late-game electricity.
 
 ## Concept:
 
-Keep methods modular and simple. Every block has 1 function and can interact with the world (Through a GUI or otherwise). Do not make vanilla blocks obselete.
+Keep methods modular and simple. Every block has 1 function and can interact with the world (Through a GUI or otherwise). Do not make vanilla blocks obselete. Items without direct use should be avoided as much as possible (i.e. items only used in crafting).
+
+In essence this mod adds 3 different power systems: Heat energy, mechanical energy and electrical energy, and ways to convert one to the other. Also machines are added which work off of one of these systems. With only a few inefficiënt ways to store energy, it is required to set up an efficiënt and reliable power generation system, to allow all of your machines to work consistently.
 
 #### Alterations to vanilla:
 Furnaces require to be heated to different temperatures for different items. This allows simultaneously for more efficient small scale smelting of low-heat items (such as food) and large scale smelting of high-heat items (such as ores). Furnaces no longer accept fuel, and require to be fueled from external sources.
@@ -33,7 +35,7 @@ Different heat and movement sources can be used within a system. The water boile
 - Turbine
 
 ### Machinery
-Electricity has to be converted to a more appropriate energy form in order to be used.
+Every machine uses one particular kind of energy.
 
 #### Heating element:
 Because of the changes to furnaces, heat for furnaces and other operations has to come from somewhere. The heating element accepts electricity to generate heat for adjacent blocks. It can be heated by other Heating elements.
@@ -72,7 +74,22 @@ By running or sprinting on a rotating platform, the player turns an axis.
 Axis which transfers rotation.
 
 #### Dynamo:
-Converts mechanical energy to electrical energy through induction.
+A multiblock structure. Converts mechanical energy to electrical energy through induction.
 
 #### Copper cable:
 Conducts electricity.
+
+#### Electrical Motor:
+Converts electrical energy to mechanical energy through induction.
+
+#### Crusher:
+Crushes rocks and ores into smaller components. Uses mechanical energy.  
+- Stone, cobblestone, granite, etc. get crushed into gravel and rock dust.
+- Metal ores get crushed into their respective gravel ores (with a chance of getting more than one) and some rock dust.
+- Gem ores get crushed into their respective gems and some rock dust.
+
+#### Grinder:
+Grinds small item and fine materials into smaller components. Uses mechanical energy.  
+- Gravel gets ground into flint, sand and rock dust.
+- Gravel ores get ground into flint, metal dust (with a chance of getting more than one) and rock dust.
+
