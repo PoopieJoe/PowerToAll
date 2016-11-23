@@ -95,7 +95,8 @@ Grinds smalls item and fine materials into smaller components. Uses mechanical e
 - Sand gets ground into rock dust.
 
 #### Pump:
-Uses mechanical energy to pump liquids from the world into a pipe.
+Uses mechanical energy to pump liquids from the world or an inventory into a pipe.
 
-
+#### Tank:
+Stores liquids. Duh. Extract from the bottom with a pump.
 
